@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/hatchify/errors"
+	"github.com/gdbu/errors"
 )
 
 const (

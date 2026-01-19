@@ -3,20 +3,19 @@ package filecacher
 import (
 	"bytes"
 	"io"
+	"log"
 	"os"
 	"sync"
 
 	"github.com/gdbu/atoms"
-	"github.com/gdbu/scribe"
 
+	"github.com/gdbu/errors"
 	"github.com/gdbu/poller"
-	"github.com/hatchify/errors"
 )
 
 // NewFile will return a new file
 func NewFile(filename string) (fp *File, err error) {
 	var f File
-	f.out = scribe.New("FileCacher :: " + filename)
 	f.b = bytes.NewBuffer(nil)
 	f.filename = filename
 
@@ -35,8 +34,7 @@ func NewFile(filename string) (fp *File, err error) {
 
 // File represents a file
 type File struct {
-	mu  sync.RWMutex
-	out *scribe.Scribe
+	mu sync.RWMutex
 
 	p *poller.Poller
 	b *bytes.Buffer
@@ -50,7 +48,7 @@ func (f *File) onEvent(e poller.Event) {
 	switch e {
 	case poller.EventWrite:
 		if err := f.refreshBuffer(); err != nil {
-			f.out.Errorf("error refreshing buffer: %v", err)
+			log.Printf("filecacher: error refreshing buffer: %v\n", err)
 			return
 		}
 	case poller.EventRemove:
