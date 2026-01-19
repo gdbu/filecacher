@@ -1,12 +1,6 @@
 github.com/gdbu/atoms v1.0.1 h1:7vSKoMNHQXQ0iMnDKjTDbOjhPVHZxgqiW4KPpKzGjyY=
 github.com/gdbu/atoms v1.0.1/go.mod h1:NAF1/IvAK0xby1xvmlRLBpapkWBhWL8dlcsxVDGuUpo=
-github.com/gdbu/poller v0.4.92 h1:l8de4I7ALQo44J2T/SlrUjXywZ02pHPpwfbi9lSPZnA=
-github.com/gdbu/poller v0.4.92/go.mod h1:3UkHxjvzbdeSSGD5J7EtqA918o7k7beWiFAjxBdK/ms=
-github.com/gdbu/scribe v0.4.88 h1:XuvLpX3Hpvz+L4Fh6sGWAX+LTdZcWPkcrECfKT0J4Jg=
-github.com/gdbu/scribe v0.4.88/go.mod h1:d2N8Lim+phn6EuoppRUs6Vm9CSAHtzhTubGNM+A9Ya4=
-github.com/hatchify/colors v0.4.79 h1:E7LXqZVYDFNaTcQGxlBSfEKQ2rByeAUW84uKkat3AoA=
-github.com/hatchify/colors v0.4.79/go.mod h1:t0952Ef1zDFMVTCkOwhrdJS9ToVWTdcJ3PWCHZADLuU=
-github.com/hatchify/cron v0.4.82 h1:NXiWl4/9w8Egg2N2FCrQuPYLevszgUv62ZHHMzfFbi8=
-github.com/hatchify/cron v0.4.82/go.mod h1:X/CVy+BJDASlwrjpwJC4+jzD5Oeaw/NHGYkKRO3r9Tc=
-github.com/hatchify/errors v0.4.82 h1:o7eB9r1X3Sx7PBRRXMCaAm+vXcoQLE4ZOesIv4oK36Q=
-github.com/hatchify/errors v0.4.82/go.mod h1:niCrsPjs0fFes147TgJ0LSUVdtavQTUvBxNoJm9Vew0=
+github.com/gdbu/errors v0.5.0 h1:Eind/t7U7V8ALS9U5BGl4Sgf/o4OrAZHYXvZO33Hbd0=
+github.com/gdbu/errors v0.5.0/go.mod h1:npjb1xcBE8Z692We7B/woYfmYpfOQj/alXNXZ3TT2YQ=
+github.com/gdbu/poller v0.5.0 h1:345/+wG5mFNyHzMsqvJ3FseaDxEHUeW6sTcNyUZBMkE=
+github.com/gdbu/poller v0.5.0/go.mod h1:lOZDzTgm8o8yzC1IYJwtnaG+ILNY128yb4qWHYb0W2E=
